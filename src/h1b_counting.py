@@ -35,7 +35,7 @@ def getFieldIdx(fields):
                 for key2 in FIELDKEYS_ALTER[key]:
                     if key2 in fields:
                         key = key2
-                        continue
+                        break
             fIdx[key0] = fields.index(key)
         except ValueError as e:
             logging.warning(e)
